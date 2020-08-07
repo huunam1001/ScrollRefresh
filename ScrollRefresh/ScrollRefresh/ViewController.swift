@@ -8,11 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UIScrollViewDelegate
+{
+    
+     @IBOutlet weak var tblData:UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tblData.addRefreshView()
+        
+        tblData.delegate = self
+    }
+    
+    @IBAction func endLoading(_ sender: Any)
+    {
+        tblData.finishRefreshData()
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        tblData.unfoldHeader()
+    }
+      
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        if(scrollView.checkRefreshFlag())
+        {
+            tblData.freezeRefreshHeader()
+        }
     }
 
 

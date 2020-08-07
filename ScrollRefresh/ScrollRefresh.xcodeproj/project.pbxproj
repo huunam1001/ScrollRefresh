@@ -14,6 +14,7 @@
 		8435ECBE24DD26950037A97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8435ECBC24DD26950037A97B /* LaunchScreen.storyboard */; };
 		8435ECC924DD26950037A97B /* ScrollRefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435ECC824DD26950037A97B /* ScrollRefreshTests.swift */; };
 		8435ECD424DD26950037A97B /* ScrollRefreshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435ECD324DD26950037A97B /* ScrollRefreshUITests.swift */; };
+		8435ECE224DD270A0037A97B /* UIScrollView.Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435ECE124DD270A0037A97B /* UIScrollView.Refresh.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8435ECCF24DD26950037A97B /* ScrollRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8435ECD324DD26950037A97B /* ScrollRefreshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRefreshUITests.swift; sourceTree = "<group>"; };
 		8435ECD524DD26950037A97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8435ECE124DD270A0037A97B /* UIScrollView.Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.Refresh.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				8435ECB124DD26940037A97B /* AppDelegate.swift */,
+				8435ECE124DD270A0037A97B /* UIScrollView.Refresh.swift */,
 				8435ECB524DD26940037A97B /* ViewController.swift */,
 				8435ECB724DD26940037A97B /* Main.storyboard */,
 				8435ECBA24DD26950037A97B /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8435ECB624DD26940037A97B /* ViewController.swift in Sources */,
+				8435ECE224DD270A0037A97B /* UIScrollView.Refresh.swift in Sources */,
 				8435ECB224DD26940037A97B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ScrollRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ScrollRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
